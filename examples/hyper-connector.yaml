@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hyper-connector
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hyper-connector
+    spec:
+      containers:
+      - name: hyper-connector
+        image: imeoer/hyper-connector-k8s:latest
+        imagePullPolicy: Always
+        env:
+        - name: HYPER_ACCESS_KEY
+          value: <HYPER_ACCESS_KEY>
+        - name: HYPER_SECRET_KEY
+          value: <HYPER_SECRET_KEY>

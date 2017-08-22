@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: default
+spec:
+  containers:
+  - image: nginx
+    imagePullPolicy: Always
+    name: nginx
+  dnsPolicy: ClusterFirst
+  # Tolerate the Hyper taint to get the scheduler to schedule it.
+  tolerations:
+  - key: hyper.sh/container
+    effect: NoSchedule
