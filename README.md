@@ -1,6 +1,8 @@
 # Hyper.sh Container Connector for Kubernetes (experimental)
 
-Reference project: [aci-connector-k8s](https://github.com/Azure/aci-connector-k8s)
+> Note:
+>
+>This project is inspired by and based on [aci-connector-k8s](https://github.com/Azure/aci-connector-k8s). We chose to create a new repo, instead of sending a PR, simply because that this is merely a quick change. In the future, a new open framework is desired to support all container-first infrastructure service with driver plugins, including [ACI](https://azure.microsoft.com/en-us/services/container-instances/) and [Hyper.sh](hyper.sh). 
 
 The [Hyper.sh](https://hyper.sh/) Container Connector for Kubernetes allows Kubernetes clusters to deploy Hyper.sh Container.
 
