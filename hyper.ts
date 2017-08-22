@@ -3,8 +3,6 @@ import aws4 = require('hyper-aws4')
 import fetch = require('node-fetch')
 import R = require('ramda')
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
-
 class Hyper {
   private accessKey: string
   private secretKey: string

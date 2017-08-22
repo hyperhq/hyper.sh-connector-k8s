@@ -68,7 +68,7 @@ pod "nginx" created
 $ kubectl get pods -w -o wide
 NAME                              READY     STATUS    RESTARTS   AGE       IP              NODE
 hyper-connector-3791207804-gtc77  1/1       Running   1          2d        172.17.0.3      minikube
-nginx                             1/1       Running   0          2d        209.177.93.72   hyper-connector
+nginx                             1/1       Running   0          2d        205.233.66.72   hyper-connector
 ```
 
 Note the pod is scheduled on the `hyper-connector` node.  It should now be accessible at the public IP listed.
@@ -121,10 +121,9 @@ Then edit `examples/hyper-connector.yaml` to point to the `remote-image`.
 
 # TODO
 
-- [ ] Full container paramater support
+- [ ] Full container parameter support
 - [ ] Improve the status synchronization of node and pod
 - [ ] Enhanced error checking and exception handling
-- [ ] Test cases and document
 
 # Contributing
 
